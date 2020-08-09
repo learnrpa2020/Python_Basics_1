@@ -10,7 +10,7 @@ for i in range(amazon_products_len):
     
     #value=input()
     amazon_products.insert(i,input())
-    i=+1
+    i+=1
     #print(amazon_products)
 print(amazon_products)
 
@@ -22,7 +22,7 @@ for i in range(amazon_products_len):
     key = input()
     value = int(input())
     amazon_products.update({key:value})
-    i=+1
+    i+=1
 print(amazon_products)
 print(amazon_products.items())
 print(amazon_products.keys())
