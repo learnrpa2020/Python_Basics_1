@@ -1,0 +1,11 @@
+my_list=[(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+tuples=tuple(my_list)
+my_tuple=(6,3,9,4,2)
+#my_list.sort()
+print(my_list)
+print(my_tuple.index(3))
+test_tuple=list(my_tuple)
+print(test_tuple[::-1])
+my_list.sort(tuples, key=-1)
+print(my_list)
+print(tuples)
