@@ -15,4 +15,19 @@ help(spec_func)
 print('--------------------------or-----------------------')
 print(spec_func.__doc__)
 
+print('-----------------------global keyword-----------------------')
+total=0
+def spec_variable():
+    num_list=[1,2,3,4,5]
+    for items in num_list:
+        global total
+        total+=items
+    return total
+print(spec_variable())
+
+
+
+    
+    
+
     
