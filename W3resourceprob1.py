@@ -63,4 +63,37 @@ for i in range(a+1):
 print(kevin)
 print(stuart)
 
+word1=input('enter the word')
+k=int(input('enter the num'))
+n=len(word1)
+li3=[]
+q=int(n/k)
+for t in range(0,n,k):
+    li3.append(word1[t:k+t:])
+m=0
+newstring=""
+for item in li3:
+    for m in range(k):
+        if item[m] not in newstring :
+            newstring=newstring+item[m]
+print(newstring)
+    
+    
+    
+       
+        
+        
+    
+    
+    
+    
+    
+    
+        
+
+    
+    
+    
+
+
 
