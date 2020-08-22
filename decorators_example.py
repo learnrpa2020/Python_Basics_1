@@ -28,3 +28,21 @@ def long_time2():
         
 long_time()
 long_time2()
+
+print('-----------------------------------------------------')
+user1={
+    'name':'Sona',
+    'valid':False
+    }
+
+def authenticated(fn):
+    def wrapper(*args,**kwargs):
+        if args[0]['valid']:
+            return fn(*args,**kwargs)
+    return wrapper
+
+@authenticated
+def message_friend(user):
+    print('message is sent')
+
+message_friend(user1)
